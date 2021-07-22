@@ -1,8 +1,9 @@
 package com.company;
 
+import java.util.List;
 import java.util.Objects;
 
-public class Cat {
+public class Cat implements AviaryService<Cat>{
     private int age;
     private String name;
 
@@ -46,5 +47,25 @@ public class Cat {
     @Override
     public int hashCode() {
         return Objects.hash(age, name);
+    }
+
+    @Override
+    public void add(List<Cat> t) {
+
+    }
+
+    @Override
+    public void add(Cat cat) {
+
+    }
+
+    @Override
+    public void remove(Cat cat) {
+
+    }
+
+    @Override
+    public void remove(List<Cat> t) {
+
     }
 }

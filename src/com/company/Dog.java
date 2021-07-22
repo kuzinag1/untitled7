@@ -1,8 +1,9 @@
 package com.company;
 
+import java.util.List;
 import java.util.Objects;
 
-public class Dog {
+public class Dog implements AviaryService<Dog>{
     private int age;
     private String name;
 
@@ -46,5 +47,25 @@ public class Dog {
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public void add(List<Dog> t) {
+
+    }
+
+    @Override
+    public void add(Dog dog) {
+
+    }
+
+    @Override
+    public void remove(Dog dog) {
+
+    }
+
+    @Override
+    public void remove(List<Dog> t) {
+
     }
 }
